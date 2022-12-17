@@ -6,6 +6,8 @@ let condition;
 const subjectId = jsPsych.randomization.randomID(10);
 jsPsych.data.addProperties({ subject: subjectId });
 
+getConditionThenRun();
+
 async function getConditionThenRun() {
   condition = await jsPsychPipe.getCondition(dataPipeExpId);
 
