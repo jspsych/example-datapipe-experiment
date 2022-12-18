@@ -33,6 +33,7 @@ function buildAndRunExperiment() {
     on_finish: function (data) {
       const base64string = data.png.replace('data:', '').replace(/^.+,/, '');
       jsPsychPipe.saveBase64Data(dataPipeExpId, `${subjectId}_image.png`, base64string);
+      data.png = null;
     }
   };
 
