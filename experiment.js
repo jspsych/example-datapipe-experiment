@@ -47,7 +47,7 @@ function buildAndRunExperiment() {
 
   jsPsych.run([
     showConditionTrial,
-    //drawSomethingTrial,
+    drawSomethingTrial,
     saveData
   ]);
 
